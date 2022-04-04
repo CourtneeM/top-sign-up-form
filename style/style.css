@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+#left-section {
+  flex: 1 1 35%;
+  position: relative;
+  background-image: url(../images/halie-west-25xggax4bSA-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#left-section #title {
+  position: absolute;
+  top: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#left-section #title img {
+  width: 80px;
+}
+#left-section #title h1 {
+  font-size: 5rem;
+  font-family: "Caesar Dressing", cursive;
+  font-weight: 100;
+  color: #fff;
+}
+#left-section p {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+#left-section footer p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+#left-section footer a:link {
+  color: #ccc;
+}
+#left-section footer a:visited {
+  color: #ccc;
+}
+
+#right-section {
+  flex: 1 1 65%;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: #fbf9f9;
+}
+#right-section #form-header {
+  margin: 300px 50px 50px;
+  width: 70%;
+}
+#right-section form ul {
+  padding: 20px 50px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-shadow: 0px 6px 9px -1px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0px 6px 9px -1px rgba(0, 0, 0, 0.23);
+  box-shadow: 0px 6px 9px -1px rgba(0, 0, 0, 0.23);
+}
+#right-section form ul p {
+  flex: 1 1 100%;
+  margin-bottom: 20px;
+}
+#right-section form ul li {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 150px;
+  margin-bottom: 25px;
+  margin-right: 13%;
+  font-weight: 400;
+  list-style: none;
+}
+#right-section form ul li label {
+  margin-bottom: 5px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.11rem;
+  text-transform: uppercase;
+}
+#right-section form ul li input {
+  padding: 5px;
+  font-size: 1rem;
+  background-color: #fbf9f9;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+#right-section form ul li input:focus {
+  outline: 1px solid blue;
+}
+#right-section .error {
+  border: 1px solid red;
+}
+#right-section .error-message {
+  font-size: 0.75rem;
+  color: red;
+}
+#right-section button {
+  margin: 30px 0 0 50px;
+  padding: 15px 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: darkolivegreen;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#right-section #form-container > p {
+  margin: 30px 0 0 50px;
+  font-size: 1.1rem;
+}
+#right-section #form-container a {
+  text-decoration: none;
+}
+#right-section #form-container a:link {
+  color: darkolivegreen;
+}
+#right-section #form-container a:visited {
+  color: darkolivegreen;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,152 @@
+$right-section-background: #fbf9f9;
+$right-section-main-font-size: 1.4rem;
+$button-font-size: 1rem;
+$main-text-color: #000;
+$secondary-text-color: #ccc;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family :sans-serif;
+}
+
+
+#left-section {
+  flex: 1 1 35%;
+  position: relative;
+  background-image: url(../images/halie-west-25xggax4bSA-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+
+  #title {
+    position: absolute;
+    top: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+    img {
+      width: 80px;
+    }
+
+    h1 {
+      font-size: 5rem;
+      font-family: 'Caesar Dressing', cursive;
+      font-weight: 100;
+      color: #fff;
+    }
+  }
+  
+  p {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  footer {
+    p {
+      font-size: 0.9rem;
+      color: $secondary-text-color;
+    }
+    a:link { color: $secondary-text-color; }
+    a:visited { color: $secondary-text-color; }
+  } 
+}
+
+#right-section {
+  flex: 1 1 65%;
+  font-size: $right-section-main-font-size;
+  font-weight: 600;
+  background-color: $right-section-background;
+
+  #form-header {
+    margin: 300px 50px 50px;
+    width: 70%;
+  }
+
+  form {
+    ul {
+      padding: 20px 50px;
+      background-color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      -webkit-box-shadow: 0px 6px 9px -1px rgba(0,0,0,0.23); 
+      -moz-box-shadow: 0px 6px 9px -1px rgba(0,0,0,0.23); 
+      box-shadow: 0px 6px 9px -1px rgba(0,0,0,0.23);
+      p {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+      }
+
+      li {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 150px;
+        margin-bottom: 25px;
+        margin-right: 13%;
+        font-weight: 400;
+        list-style: none;
+
+        label {
+          margin-bottom: 5px;
+          font-size: 0.7rem;
+          font-weight: 600;
+          letter-spacing: 0.11rem;
+          text-transform: uppercase;
+        }
+
+        input {
+          padding: 5px;
+          font-size: 1rem;
+          background-color: #fbf9f9;
+          border: 1px solid #ddd;
+          border-radius: 3px;
+
+          &:focus {
+            outline: 1px solid blue;
+          }
+        }
+      }
+    }
+  }
+
+  .error {
+    border: 1px solid red;
+  }
+
+  .error-message {
+    font-size: 0.75rem;
+    color: red;
+  }
+
+  button {
+    margin: 30px 0 0 50px;
+    padding: 15px 50px;
+    font-size: $button-font-size;
+    font-weight: 600;
+    color: #fff;
+    background-color: darkolivegreen;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  #form-container {
+    > p {
+      margin: 30px 0 0 50px;
+      font-size: 1.1rem;
+    }
+    a { text-decoration: none; }
+    a:link { color: darkolivegreen; }
+    a:visited { color: darkolivegreen; }
+  }
+}
